@@ -1,10 +1,7 @@
 ---
 layout: default
-title: Blogging Like a Vlad
+title: Vlad Nestorov
 ---
-# About Me
-## I work
-Check out my [LinkedIn](https://www.linkedin.com/in/vlad-nestorov/)
-## I play
+[LinkedIn](https://www.linkedin.com/in/vlad-nestorov/)
 
-Hello World
+[500px](https://500px.com/p/vladnestorov?view=photos)

@@ -5,17 +5,17 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Github',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/logo_github.svg').default,
     url: 'https://github.com/vlad-nestorov',
   },
   {
     title: 'LinkedIn',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/logo_linkedin.svg').default,
     url: 'https://www.linkedin.com/in/vlad-nestorov/',
   },
   {
     title: '500px',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/logo_500px.svg').default,
     url: 'https://500px.com/p/vladnestorov?view=photos',
   },
 ];

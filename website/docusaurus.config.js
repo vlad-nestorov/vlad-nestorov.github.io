@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Vlad Nestorov',
   tagline: '',
-  favicon: 'img/favicon.ico',
+  favicon: undefined,
 
   // Set the production url of your site here
   url: 'https://www.nestorov.net',
@@ -58,13 +58,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: undefined,
       navbar: {
         title: 'Vlad Nestorov',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {

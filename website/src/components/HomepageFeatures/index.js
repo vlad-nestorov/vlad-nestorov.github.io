@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Github',
+    title: 'GitHub',
     Svg: require('@site/static/img/logo_github.svg').default,
     url: 'https://github.com/vlad-nestorov',
   },

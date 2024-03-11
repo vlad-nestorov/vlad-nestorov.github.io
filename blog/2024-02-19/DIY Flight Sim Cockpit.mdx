@@ -6,36 +6,36 @@ tags:
 
 import arduinoToggle from '@site/blog/2024-02-19/arduino-toggle.mp4';
 
-# Overview
+## Overview
 
 I was pretty happy with my out of the box setup with X-Plane 11, Saitek Cessna yoke + rudder, HTC Vive VR headset. Then I started taking flying lessons and realized what I really lack is throttle control, and the Saitek one just did not have the right feedback to learn from.
 
 So then it came down to price. I could spend 1000's on a nice flight sim cockpit, or buy actual Cessna throttle and mixture controls and hook them up to an Arduino and some 2x4s. If you've got this far, you know the choice I made :)
 
-# The Build
-## Implementation details
+## The Build
+### Implementation details
 See the [GitHub repo](https://github.com/vlad-nestorov/flight-sim) for a full part list, measurements and other details.
 
-##  Materials
+###  Materials
 ![](./flight-sim-parts.png.png)
 
 Cheap but realistic enough with a VR headset on is what we are going for. The frame is lumber and plywood (~$20). The controls are the simplest switches with a similar feel, hooked up to an Arduino board ($125). The crowning jewels are the real throttle and mixture controls, which cost more than the other parts combined at $280. 
 
 I'm excluding the cost of the other things I already had before starting this project: X-Plane license, Saitek Yoke+Rudder, VR headset, a graphics card that can handle it, and soldering tools.
 
-## Getting the cockpit dimensions
+### Getting the cockpit dimensions
 
 ![](./seat-height.png)When I have my VR headset on, I still need to reach for physical switches, so it becomes important that where I see the switch in VR is where it is in reality. Luckily, we can look at X-Plane object models using an [AC3D plugin](https://developer.x-plane.com/tools/ac3d-plugin/) Thankfully the coordinates are in meters, so it was pretty easy to get relative distances between things. 
 
-## Hooking up the Arduino
+### Hooking up the Arduino
 <video autoPlay muted loop >
   <source src={arduinoToggle} />
 </video>
 
 Arduino provides a Joystick library, which makes it pretty easy to make physical switches become joystick buttons. One challenge was configuring X-Plane. For most things there are ON, OFF and TOGGLE bindings corresponding to a button push event, so if I were to treat my toggles as a button, I'd only be able to use the TOGGLE binding, which would mean my initial state in X-Plane might not match the physical toggle switch. So, I pretend each toggle is actually two buttons (an off button and on button). That way when I first initialize, I can "push" the joystick button corresponding to the correct physical state. 
 
-## Building the frame
+### Building the frame
 ![](./frame.png)
 My first iteration of the frame had the rudder pedals sitting on the ground. Since I wanted the rudder pedal and yoke to have the same distance between them as measured from the cockpit, the whole set up ended up being too close to the ground. Now, if used Cessna seats were cheaper, I might have a cooler set up. Instead I settled for creating a little platform for the rudders and sticking with my office chair. 
 
-## Putting it all together
+### Putting it all together

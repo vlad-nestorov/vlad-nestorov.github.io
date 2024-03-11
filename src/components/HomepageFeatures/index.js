@@ -4,6 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Blog',
+    Svg: require('@site/static/img/logo_blog.svg').default,
+    url: '/blog',
+  },
+  {
     title: 'GitHub',
     Svg: require('@site/static/img/logo_github.svg').default,
     url: 'https://github.com/vlad-nestorov',
@@ -22,7 +27,7 @@ const FeatureList = [
 
 function Feature({Svg, title, url}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <a href={url}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img"/>

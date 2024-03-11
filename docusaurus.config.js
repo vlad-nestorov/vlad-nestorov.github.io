@@ -44,10 +44,8 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-//          editUrl:
-//            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+           'https://github.com/vlad-nestorov/vlad-nestorov.github.io/tree/main/blog',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -61,8 +59,8 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true
+        disableSwitch: true,
+        respectPrefersColorScheme: false
       },
       // Replace with your project's social card
       image: undefined,

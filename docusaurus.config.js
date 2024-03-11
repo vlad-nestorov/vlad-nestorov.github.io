@@ -45,7 +45,7 @@ const config = {
         blog: {
           showReadingTime: false,
           editUrl:
-           'https://github.com/vlad-nestorov/vlad-nestorov.github.io/tree/main/blog',
+           'https://github.com/vlad-nestorov/vlad-nestorov.github.io/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',

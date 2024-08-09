@@ -1,11 +1,14 @@
 name: Deploy to GitHub Pages
 
 concurrency: 
-  group: ghpages
+  group: ghpages-${{ github.ref_name }}
   cancel-in-progress: false
   
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -33,6 +36,7 @@ jobs:
 
   # Deploy job
   deploy:
+    if: github.ref_name == 'main'
     # Add a dependency to the build job
     needs: build
 
